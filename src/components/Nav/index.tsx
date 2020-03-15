@@ -11,9 +11,10 @@ const Nav = () => {
       setNavSize(size);
     }
   }, [WrapperRef]);
-  const offset = React.useMemo(() => (window.innerHeight / 100) * 10 * -1, [
-    navSize
-  ]);
+  const offset = React.useMemo(
+    () => (window && window.innerHeight / 100) * 10 * -1,
+    [navSize]
+  );
   const OffsetedLink = React.useCallback(
     (props: { to: string; children: React.ReactNode; spy?: boolean }) => (
       <Link spy offset={offset} duration={500} smooth isDynamic {...props} />
