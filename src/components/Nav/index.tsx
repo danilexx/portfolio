@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Container, Links, Link, FilledLogo, Wrapper } from "./styles";
+import { useWindowSize } from "react-use";
 
 const Nav = () => {
   const WrapperRef = React.useRef<HTMLDivElement>(null);
@@ -11,10 +12,8 @@ const Nav = () => {
       setNavSize(size);
     }
   }, [WrapperRef]);
-  const offset = React.useMemo(
-    () => (window && window.innerHeight / 100) * 10 * -1,
-    [navSize]
-  );
+  const { height } = useWindowSize();
+  const offset = React.useMemo(() => (height / 100) * 10 * -1, [navSize]);
   const OffsetedLink = React.useCallback(
     (props: { to: string; children: React.ReactNode; spy?: boolean }) => (
       <Link spy offset={offset} duration={500} smooth isDynamic {...props} />
