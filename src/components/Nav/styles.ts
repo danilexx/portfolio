@@ -29,6 +29,7 @@ export const Links = styled.ul`
   flex-direction: row;
   list-style: none;
   margin-left: auto;
+  flex-wrap: wrap;
 `;
 
 export const Link = styled(BaseLink)`
