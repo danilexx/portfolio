@@ -33,7 +33,8 @@ module.exports = {
     "import/no-self-import": "off",
     "react/jsx-props-no-spreading": "off",
     "import/named": "off",
-    "react/no-array-index-key": "off"
+    "react/no-array-index-key": "off",
+    "@typescript-eslint/no-explicit-any": "off"
   },
   settings: {
     "import/resolver": {

@@ -1,5 +1,5 @@
 import styled from "src/lib/StyledComponents";
-import { Link as BaseLink } from "react-scroll";
+import OffsetedLink from "../OffsetedLink";
 
 export const Container = styled.div`
   display: flex;
@@ -32,7 +32,7 @@ export const Links = styled.ul`
   flex-wrap: wrap;
 `;
 
-export const Link = styled(BaseLink)`
+export const Link = styled(OffsetedLink)`
   font-size: 2rem;
   color: ${props => props.theme.lightGray1};
   font-weight: bold;

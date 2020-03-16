@@ -1,11 +1,10 @@
 import styled from "src/lib/StyledComponents";
 
-
 export const TechnologiesGrid = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  @media screen and (max-width: 470px){
+  @media screen and (max-width: 470px) {
     flex-direction: column;
   }
 `;

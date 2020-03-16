@@ -1,0 +1,34 @@
+import React from "react";
+import { Form, Title, Buttons } from "./styles";
+import Input, { TextArea } from "../Input";
+import { PrimaryButton, SecondaryButton } from "src/components/Button";
+
+interface FormData {
+  name: string;
+}
+
+const ContactForm = () => {
+  const handleSubmit = (data: FormData) => {
+    console.log(data);
+  };
+
+  return (
+    <Form onSubmit={handleSubmit}>
+      <Title>Mandar Mensagem</Title>
+      <Input name="name" label="Nome" placeholder="Joalzinho" />
+      <Input name="email" label="Email" placeholder="joalzinho@mail.com" />
+      <TextArea
+        name="message"
+        label="Mensagem"
+        placeholder="ex: quero trabalhar contigo!"
+        rows={6}
+      />
+      <Buttons>
+        <SecondaryButton>Limpar</SecondaryButton>
+        <PrimaryButton>Enviar!</PrimaryButton>
+      </Buttons>
+    </Form>
+  );
+};
+
+export default ContactForm;

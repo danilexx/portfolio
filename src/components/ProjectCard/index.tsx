@@ -4,11 +4,9 @@ import {
   ProjectImage,
   ProjectInfo,
   ProjectName,
-  ProjectDescription,
-  Buttons,
-  PrimaryButton,
-  SecondaryButton
+  ProjectDescription
 } from "./styles";
+import { Buttons, PrimaryButton, SecondaryButton } from "src/components/Button";
 
 export { ProjectsGrid } from "./styles";
 

@@ -5,6 +5,7 @@ import About from "src/sections/about";
 import Nav from "src/components/Nav";
 import Projects from "src/sections/projects";
 import Technologies from "src/sections/technologies";
+import Contact from "src/sections/contact";
 
 const Home: React.FC = () => (
   <Layout>
@@ -13,6 +14,7 @@ const Home: React.FC = () => (
     <About />
     <Projects />
     <Technologies />
+    <Contact />
   </Layout>
 );
 

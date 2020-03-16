@@ -1,13 +1,13 @@
 import React from "react";
 
-export { TechnologiesGrid } from "./styles";
-
 import {
   Container,
   TechnologyImage,
   TechnologyName,
   TechnologyDescription
 } from "./styles";
+
+export { TechnologiesGrid } from "./styles";
 
 interface Technology {
   name: string;

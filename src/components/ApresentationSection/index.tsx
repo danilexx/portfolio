@@ -9,6 +9,7 @@ import {
   PrimaryStroke,
   SecondaryStroke
 } from "./styles";
+import OffsetedLink from "../OffsetedLink";
 
 const ApresentationSection = () => {
   return (
@@ -19,10 +20,12 @@ const ApresentationSection = () => {
           Olá, me chamo Danilo
           <br /> e sou desenvolvedor web
         </Title>
-        <SectionButton>
-          <Cube />
-          Proxima Seção
-        </SectionButton>
+        <OffsetedLink to="about">
+          <SectionButton>
+            <Cube />
+            Proxima Seção
+          </SectionButton>
+        </OffsetedLink>
       </Main>
       <PrimaryStroke />
       <SecondaryStroke />

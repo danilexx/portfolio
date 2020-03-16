@@ -1,37 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Container, Links, Link, FilledLogo, Wrapper } from "./styles";
-import { useWindowSize } from "react-use";
 
 const Nav = () => {
-  const WrapperRef = React.useRef<HTMLDivElement>(null);
-  const [navSize, setNavSize] = React.useState(0);
-  React.useEffect(() => {
-    if (WrapperRef.current) {
-      const size = WrapperRef.current.getBoundingClientRect().height;
-      setNavSize(size);
-    }
-  }, [WrapperRef]);
-  const { height } = useWindowSize();
-  const offset = React.useMemo(() => (height / 100) * 10 * -1, [navSize]);
-  const OffsetedLink = React.useCallback(
-    (props: { to: string; children: React.ReactNode; spy?: boolean }) => (
-      <Link spy offset={offset} duration={500} smooth isDynamic {...props} />
-    ),
-    [offset]
-  );
   return (
-    <Wrapper ref={WrapperRef}>
+    <Wrapper>
       <Container>
-        <OffsetedLink to="about" spy={false}>
+        <Link to="about" spy={false}>
           <FilledLogo />
-        </OffsetedLink>
+        </Link>
 
         <Links>
-          <OffsetedLink to="about">Sobre</OffsetedLink>
-          <OffsetedLink to="projects">Projetos</OffsetedLink>
-          <OffsetedLink to="tecnologies">Tecnologias</OffsetedLink>
-          <OffsetedLink to="contact">Contato</OffsetedLink>
+          <Link to="about">Sobre</Link>
+          <Link to="projects">Projetos</Link>
+          <Link to="technologies">Tecnologias</Link>
+          <Link to="contact">Contato</Link>
         </Links>
       </Container>
     </Wrapper>

@@ -1,7 +1,9 @@
 import React from "react";
 import Section from "src/components/Section";
 import Header from "src/components/Header";
-import TechnologyCard, { TechnologiesGrid } from "src/components/TechnologyCard";
+import TechnologyCard, {
+  TechnologiesGrid
+} from "src/components/TechnologyCard";
 
 const projects = [
   {
@@ -39,7 +41,7 @@ const projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas viverra lorem lacus feugiat vel a.",
     imgUrl: "/icons/tech/react.svg"
-  },
+  }
 ];
 
 const Technologies = () => (

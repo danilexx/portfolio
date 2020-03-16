@@ -30,6 +30,7 @@ export const Title = styled.h1`
   font-size: 5rem;
   color: white;
   font-weight: bold;
+  padding: 0 4rem;
 `;
 export const Cube = styled.div`
   background-color: ${props => props.theme.primary};

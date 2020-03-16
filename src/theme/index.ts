@@ -4,7 +4,8 @@ export const theme = {
   white: "#F4F4F4",
   darkGray: "#424242",
   lightGray1: "#CCCCCC",
-  darkDarkGray: "#272727"
+  darkDarkGray: "#272727",
+  error: "#DE3B3B"
 };
 
 export type ITheme = typeof theme;
