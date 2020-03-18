@@ -28,7 +28,10 @@ const Footer = () => (
         <Anchor target="_blank" href="https://github.com/danilexx">
           Github
         </Anchor>
-        <Anchor target="_blank" href="https://github.com/danilexxx">
+        <Anchor
+          target="_blank"
+          href="https://www.linkedin.com/in/danilo-de-jesus-2a34b21a3/"
+        >
           Linkedin
         </Anchor>
       </Content>

@@ -6,7 +6,7 @@ import { HistorySection, HistoryText, HistoryImage, Separator } from "./styles";
 const About = () => {
   return (
     <Section name="about">
-      <Header title="Sobre" subTitle="algo sobre mim" />
+      <Header title="Sobre" subTitle="Essa é a minha historia" />
       <HistorySection reverse>
         <HistoryImage src="/images/ferraz.png" />
         <HistoryText>

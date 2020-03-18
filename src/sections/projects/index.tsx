@@ -32,7 +32,10 @@ const projects = [
 
 const Projects = () => (
   <Section name="projects">
-    <Header title="Projetos" subTitle="algo sobre mim" />
+    <Header
+      title="Projetos"
+      subTitle="Esses sãos os projetos que eu desenvolvi no meu processo de aprendizagem"
+    />
     <ProjectsGrid>
       {projects.map((project, index) => (
         <ProjectCard key={index} project={project} />

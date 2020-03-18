@@ -12,7 +12,7 @@ export const ContactCardList = styled.div`
   }
 `;
 
-export const Container = styled.div`
+export const Container = styled.a`
   background-color: ${props => props.theme.darkGray};
   display: flex;
   flex-direction: row;
@@ -20,6 +20,7 @@ export const Container = styled.div`
   width: 100%;
   transition: transform 0.2s ease-in-out;
   margin: 0.5rem 0;
+  cursor: pointer;
   &:hover {
     transform: translateY(-4px);
   }
@@ -45,7 +46,6 @@ export const ContactName = styled.div`
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 0.12rem;
-  cursor: pointer;
   flex: 1;
   text-align: center;
 `;

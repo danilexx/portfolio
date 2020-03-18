@@ -46,7 +46,10 @@ const projects = [
 
 const Technologies = () => (
   <Section name="technologies">
-    <Header title="Tecnologias" subTitle="algo sobre mim" />
+    <Header
+      title="Tecnologias"
+      subTitle="Essas são as tecnologias/linguagens que eu utilizo nos meus projetos"
+    />
     <TechnologiesGrid>
       {projects.map((technology, index) => (
         <TechnologyCard key={index} technology={technology} />
