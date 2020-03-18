@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import React from "react";
 import { Form, Title, Buttons } from "./styles";
 import Input, { TextArea } from "../Input";
@@ -8,9 +9,8 @@ interface FormData {
 }
 
 const ContactForm = () => {
-  const handleSubmit = (data: FormData) => {
-    console.log(data);
-  };
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const handleSubmit = (data: FormData) => {};
 
   return (
     <Form onSubmit={handleSubmit}>

@@ -1,5 +1,6 @@
 import styled from "src/lib/StyledComponents";
 import OffsetedLink from "../OffsetedLink";
+import { darken } from "polished";
 
 export const Container = styled.div`
   display: flex;
@@ -15,6 +16,9 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   position: sticky;
   top: 0;
   left: 0;
@@ -30,6 +34,10 @@ export const Links = styled.ul`
   list-style: none;
   margin-left: auto;
   flex-wrap: wrap;
+`;
+
+export const MenuLink = styled(OffsetedLink)`
+  margin: 0 1rem;
 `;
 
 export const Link = styled(OffsetedLink)`
@@ -58,8 +66,114 @@ export const Link = styled(OffsetedLink)`
   &.active:after {
     transform: scaleX(1);
   }
+  @media screen and (max-width: 480px) {
+    padding: 2rem 2rem;
+    /* padding-left: 4rem; */
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 1rem auto;
+    /* display: flex !important; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 4px;
+    &:after {
+      transition: opacity 0.5s ease-in-out;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 2rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 4px;
+      background-color: ${props => props.theme.primary};
+      transform: translateY(-50%) rotate(45deg);
+      opacity: 0;
+    }
+    &.active:after {
+      opacity: 1;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
 `;
 
 export const FilledLogo = styled.img.attrs({
   src: "/icons/logos/filled.svg"
 })``;
+
+export const MenuWrap = styled.div`
+  .bm-overlay {
+    top: 0;
+    left: 0;
+    z-index: 55 !important;
+  }
+  .bm-menu-wrap {
+    top: 0;
+    z-index: 55 !important;
+  }
+  .bm-burger-button {
+    /* position: fixed; */
+    display: none;
+    /* width: 36px;
+    height: 30px;
+    right: 2rem;
+    top: 5vh;
+    transform: translateY(-50%);
+    z-index: 65; */
+  }
+
+  .bm-burger-bars {
+    background: ${props => props.theme.white};
+  }
+
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  .bm-menu {
+    z-index: 60;
+    background: ${props => darken(0.03, props.theme.darkDarkGray)};
+    /* height: 100vh; */
+    overflow: hidden;
+    padding-top: 10vh;
+    .bm-item-list {
+      overflow: hidden;
+    }
+  }
+`;
+
+export const BurguerMenu = styled.img.attrs<{
+  pinned?: boolean;
+  isMenuOpened?: boolean;
+}>(props => ({
+  src: `/icons/menu/${props.isMenuOpened ? "close" : "open"}.svg`
+}))<{
+  pinned?: boolean;
+  isMenuOpened?: boolean;
+}>`
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  /* margin-left: auto;
+  margin-right: 2rem; */
+  position: ${props => (props.pinned ? "fixed" : "absolute")};
+  top: 5vh;
+  right: 2rem;
+  transform: translateY(-50%);
+  z-index: 70;
+  cursor: pointer;
+  transition: transform 0.05s ease-in-out;
+  &:active {
+    transform: translateY(-50%) scale(0.9);
+  }
+`;
+
+// export const BurguerMenuButtonWrapper = styled.div`
+//   height: 10vh;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+// `;

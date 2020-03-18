@@ -8,7 +8,7 @@ const OffsetedLink = (props: {
   spy?: boolean;
 }) => {
   const { height } = useWindowSize();
-  const offset = React.useMemo(() => (height / 100) * 10 * -1, [height]);
+  const offset = React.useMemo(() => (height / 100) * 10 * -1 - 1, [height]);
   return (
     <Link spy offset={offset} duration={500} smooth isDynamic {...props} />
   );
