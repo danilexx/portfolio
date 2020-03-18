@@ -45,11 +45,14 @@ export const Link = styled(OffsetedLink)`
   color: ${props => props.theme.lightGray1};
   font-weight: bold;
   text-decoration: none;
-  margin: 0 1rem;
+  padding: 0 1rem;
   cursor: pointer;
   position: relative;
   &:hover {
     color: ${props => props.theme.white};
+    &:after {
+      transform: scaleX(1);
+    }
   }
   &:after {
     transition: transform 0.5s ease-in-out;
@@ -63,9 +66,7 @@ export const Link = styled(OffsetedLink)`
     background-color: ${props => props.theme.primary};
     transform: scaleX(0);
   }
-  &.active:after {
-    transform: scaleX(1);
-  }
+
   @media screen and (max-width: 480px) {
     padding: 2rem 2rem;
     /* padding-left: 4rem; */
@@ -78,7 +79,8 @@ export const Link = styled(OffsetedLink)`
     width: 90%;
     border-radius: 4px;
     &:after {
-      transition: opacity 0.5s ease-in-out;
+      transition: 0.05s ease-in-out;
+      transition-property: transform, opacity;
       content: "";
       position: absolute;
       top: 50%;
@@ -90,7 +92,8 @@ export const Link = styled(OffsetedLink)`
       transform: translateY(-50%) rotate(45deg);
       opacity: 0;
     }
-    &.active:after {
+    &:active:after,
+    &:focus:after {
       opacity: 1;
       transform: translateY(-50%) rotate(45deg);
     }
@@ -163,7 +166,7 @@ export const BurguerMenu = styled.img.attrs<{
   top: 5vh;
   right: 2rem;
   transform: translateY(-50%);
-  z-index: 70;
+  z-index: ${props => (props.pinned ? "70" : "45")};
   cursor: pointer;
   transition: transform 0.05s ease-in-out;
   &:active {
