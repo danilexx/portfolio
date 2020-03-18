@@ -88,6 +88,7 @@ export const PrimaryStroke = styled.div`
   ${StrokeStyles}
   background-color: ${props => props.theme.background};
   bottom: 18rem;
+  
 `;
 
 export const SecondaryStroke = styled.div`
