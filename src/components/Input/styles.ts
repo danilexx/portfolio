@@ -37,7 +37,8 @@ export const StyledLabel = styled.label`
 
 export const ErrorMessage = styled.span`
   color: ${props => props.theme.error};
-  margin: 0.5rem;
-  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  font-size: 2rem;
   text-transform: capitalize;
 `;

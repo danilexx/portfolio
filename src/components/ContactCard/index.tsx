@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, ContactName, IconWrapper, Icon } from "./styles";
-import { Link } from "../Nav/styles";
 
 export { ContactCardList } from "./styles";
 
