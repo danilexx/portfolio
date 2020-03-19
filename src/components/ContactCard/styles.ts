@@ -21,6 +21,7 @@ export const Container = styled.a`
   transition: transform 0.2s ease-in-out;
   margin: 0.5rem 0;
   cursor: pointer;
+  text-decoration: none;
   &:hover {
     transform: translateY(-4px);
   }
