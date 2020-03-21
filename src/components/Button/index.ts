@@ -17,7 +17,9 @@ const buttonStyles = css`
   font-weight: bold;
   font-size: 1.6rem;
   cursor: pointer;
+  text-align: center;
   transition: transform 0.2s ease-in-out;
+  text-decoration: none;
   &:hover {
     transform: translateY(-4px);
   }

@@ -22,6 +22,8 @@ export const Container = styled.div`
 
 export const ProjectImage = styled.img`
   width: 100%;
+  height: auto;
+  cursor: pointer;
 `;
 
 export const ProjectName = styled.h1`

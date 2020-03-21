@@ -11,10 +11,12 @@ const projects = [
     imgUrl: "/images/whittoeft.png"
   },
   {
-    name: "Whittoeft",
+    name: "Covid Brasil",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas viverra lorem lacus feugiat vel a. Amet diam neque cursus non eget et convallis. Morbi sed.",
-    imgUrl: "/images/whittoeft.png"
+    imgUrl: "/images/covidbr.png",
+    demo: "https://covidbr.now.sh",
+    code: "https://github.com/danilexx/covidbr"
   },
   {
     name: "Whittoeft",
