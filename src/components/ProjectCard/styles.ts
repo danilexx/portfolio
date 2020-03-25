@@ -18,6 +18,7 @@ export const Container = styled.div`
   margin: 1rem;
   flex: 1;
   min-width: 40%;
+  overflow: hidden;
 `;
 
 export const ProjectImage = styled.img`

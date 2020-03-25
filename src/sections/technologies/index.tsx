@@ -9,7 +9,7 @@ const projects = [
   {
     name: "React",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas viverra lorem lacus feugiat vel a.",
+      "Meu primeiro Framework JS, é de longe a tecnologia que eu mais utilizei para desenvolvimento até hoje.",
     imgUrl: "/icons/tech/react.svg"
   },
   {
