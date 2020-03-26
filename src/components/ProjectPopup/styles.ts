@@ -47,28 +47,26 @@ export const Container = styled.div`
   height: fit-content;
   max-width: 800px;
   margin: auto;
-  @media screen and (max-width: 650px) {
+  z-index: 110;
+  /* @media screen and (max-width: 650px) {
     width: 100%;
     max-width: initial;
     border-radius: 0;
     height: 100%;
-    min-height: 100vh;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: transparent;
+    justify-content: center;
     padding: 0;
-  }
-  @media screen and (min-aspect-ratio: 14/9) and (max-height: 540px) {
+  } */
+  @media screen and (min-aspect-ratio: 9/6) {
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100%;
     background-color: transparent;
     padding: 2rem 0;
+  }
+  @media screen and (max-width: 550px) {
+    background-color: transparent;
   }
 `;
 
@@ -89,6 +87,7 @@ export const Close = styled.img.attrs({
   cursor: pointer;
   transition: opacity 0.05 ease-in-out;
   opacity: 1;
+  z-index: 120;
   &:hover {
     opacity: 0.8;
   }
