@@ -73,9 +73,11 @@ const ProjectCard = ({ project }: { project: Project }) => {
           <SecondaryButton as="a" href={code || "#"} target="_blank">
             Codigo
           </SecondaryButton>
-          <PrimaryButton as="a" href={demo || "#"} target="_blank">
-            Demo
-          </PrimaryButton>
+          {demo && (
+            <PrimaryButton as="a" href={demo || "#"} target="_blank">
+              Demo
+            </PrimaryButton>
+          )}
         </Buttons>
       </ProjectInfo>
     </Container>

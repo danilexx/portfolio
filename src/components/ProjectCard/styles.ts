@@ -18,7 +18,11 @@ export const Container = styled.div`
   margin: 1rem;
   flex: 1;
   min-width: 40%;
+  max-width: 48%;
   overflow: hidden;
+  @media screen and (max-width: 600px) {
+    max-width: initial;
+  }
 `;
 
 export const ProjectImage = styled.img`
