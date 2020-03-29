@@ -9,7 +9,7 @@ const projects = [
   {
     name: "React",
     description:
-      "Meu primeiro Framework JS, é de longe a tecnologia que eu mais utilizei para desenvolvimento até hoje.",
+      "Framework/Biblioteca moderna para construção de interfaces interativas na Web utilizando javascript",
     imgUrl: "/icons/tech/react.svg"
   },
   {
@@ -23,24 +23,6 @@ const projects = [
     description:
       "Interpetrador de Javascript para Servidores, minha primeira experiencia com servidores, HTTP Rest e WebSocket",
     imgUrl: "/icons/tech/nodejs.svg"
-  },
-  {
-    name: "React",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas viverra lorem lacus feugiat vel a.",
-    imgUrl: "/icons/tech/react.svg"
-  },
-  {
-    name: "React",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas viverra lorem lacus feugiat vel a.",
-    imgUrl: "/icons/tech/react.svg"
-  },
-  {
-    name: "React",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas viverra lorem lacus feugiat vel a.",
-    imgUrl: "/icons/tech/react.svg"
   }
 ];
 
