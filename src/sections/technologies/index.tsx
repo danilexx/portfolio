@@ -13,16 +13,16 @@ const projects = [
     imgUrl: "/icons/tech/react.svg"
   },
   {
-    name: "React",
+    name: "React Native",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas viverra lorem lacus feugiat vel a.",
-    imgUrl: "/icons/tech/react.svg"
+      "Framework JS para construção de interfaces nativas utilizando o eco-sistema react, facilita o desenvolvimento e é multiplataforma",
+    imgUrl: "/icons/tech/react-native.svg"
   },
   {
-    name: "React",
+    name: "NodeJS",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas viverra lorem lacus feugiat vel a.",
-    imgUrl: "/icons/tech/react.svg"
+      "Interpetrador de Javascript para Servidores, minha primeira experiencia com servidores, HTTP Rest e WebSocket",
+    imgUrl: "/icons/tech/nodejs.svg"
   },
   {
     name: "React",
