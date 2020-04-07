@@ -7,7 +7,7 @@ const projects = [
   {
     name: "Minicardo",
     description:
-      "Minha entrada para o Hackathon 2020 Covid19 de shawee, desenvolvi o frontend em nextjs (react) e o backend and nodejs, se trata de uma redesocial para comercios pequenos.",
+      "Minha entrada para o Hackathon 2020 COVID19 da shawee, desenvolvi o frontend em nextjs (react) e o backend and nodejs, se trata de uma rede social para comercios pequenos.",
     imgUrl: "/images/minicardo.png",
     demo: "https://minicardo.now.sh",
     code: "https://github.com/danilexx/minicardo"
