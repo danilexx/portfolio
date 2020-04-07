@@ -5,6 +5,14 @@ import ProjectCard, { ProjectsGrid } from "src/components/ProjectCard";
 
 const projects = [
   {
+    name: "Minicardo",
+    description:
+      "Minha entrada para o Hackathon 2020 Covid19 de shawee, desenvolvi o frontend em nextjs (react) e o backend and nodejs, se trata de uma redesocial para comercios pequenos.",
+    imgUrl: "/images/minicardo.png",
+    demo: "https://minicardo.now.sh",
+    code: "https://github.com/danilexx/minicardo"
+  },
+  {
     name: "Wittoeft",
     description:
       "Um eCommerce de roupas, desenvolvido para o trabalho de conclusão de curso da ETEC de Ferraz de Vasconcelos, utiliza Server Side Rendering (NextJs) no frontend e NodeJs no backend.",
