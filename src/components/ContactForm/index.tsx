@@ -58,12 +58,12 @@ const ContactForm = () => {
   return (
     <Form ref={formRef} onSubmit={handleSubmit}>
       <Title>Mandar Mensagem</Title>
-      <Input name="name" label="Nome" placeholder="Joalzinho" />
-      <Input name="email" label="Email" placeholder="joalzinho@mail.com" />
+      <Input name="name" label="Nome" placeholder="Seu José" />
+      <Input name="email" label="Email" placeholder="jose@mail.com" />
       <Input
         name="subject"
         label="Titulo"
-        placeholder="Oportunidade Trabalho Incrivel"
+        placeholder="Oportunidade Trabalho"
       />
 
       <TextArea
